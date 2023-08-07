@@ -30,5 +30,4 @@ jobs:
           local-dir: en/
           server-dir: www/
 
-      - name: Create Shortcut of fr/index.html to www/
-        run: ls -l
+      - name: Create Shortcut of fr/index.html to www/ on the server
