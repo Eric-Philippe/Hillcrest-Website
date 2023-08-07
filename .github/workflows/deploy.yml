@@ -12,7 +12,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Deploy website FR
+      # Move with ftp all the content of the fr/ folder to the www/ folder of the server
+      - name: Move with ftp all the content of the fr/ folder to the www/ folder of the server
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
           server: ${{ secrets.FTP_SERVER }}
@@ -20,12 +21,4 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: fr/
           server-dir: www/
-
-      - name: Deploy website EN
-        uses: SamKirkland/FTP-Deploy-Action@4.0.0
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: en/
-          server-dir: www/
+          args: --delete
