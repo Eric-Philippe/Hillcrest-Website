@@ -29,3 +29,6 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: en/
           server-dir: www/
+
+      - name: Create Shortcut of fr/index.html to www/
+        run: ln -s fr/index.html www/index.html
