@@ -20,7 +20,6 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: fr/
           server-dir: www/
-          args: --delete
 
           # Move with ftp all the content of the fr/ folder to the www/ folder of the server
       - name: Move with ftp all the content of the fr/ folder to the www/ folder of the server
@@ -31,4 +30,3 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: en/
           server-dir: www/
-          args: --delete
