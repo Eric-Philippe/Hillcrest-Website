@@ -12,12 +12,20 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      # Deploy the local en/ and fr/ folders to the FTP www/ folder
-      - name: Deploy website
+      - name: Deploy website FR
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: en/, fr/
+          local-dir: fr/
+          server-dir: www/
+
+      - name: Deploy website EN
+        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: en/
           server-dir: www/
