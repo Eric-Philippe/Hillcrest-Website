@@ -26,9 +26,9 @@ jobs:
       - name: Move with ftp all the content of the fr/ folder to the www/ folder of the server
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
-        server: ${{ secrets.FTP_SERVER }}
-        username: ${{ secrets.FTP_USERNAME }}
-        password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: en/
-        server-dir: www/
-        args: --delete
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: en/
+          server-dir: www/
+          args: --delete
