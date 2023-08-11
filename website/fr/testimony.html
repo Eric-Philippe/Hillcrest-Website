@@ -8,6 +8,7 @@
     />
     <title>Hillcrest - Témoignages</title>
     <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/styles/styles.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap"
@@ -66,8 +67,12 @@
                   >Nos Programmes</a
                 >
                 <div class="dropdown-menu" style="font-weight: bold">
-                  <a class="dropdown-item" href="#">North Pen High School</a>
-                  <div class="dropdown-divider"></div>
+                  <a
+                    class="dropdown-item"
+                    href="./one_year_american.html"
+                    style="color: black"
+                    >Une année scolaire dans un lycée américain</a
+                  >
                 </div>
               </div>
             </li>
@@ -119,19 +124,57 @@
               <a href="#"></a>
               <div class="py-4">
                 <h4 class="fw-bold">Sophie&nbsp;</h4>
-                <h6>Période du 01/01/1234 au 02/02/2345</h6>
-                <p class="text-muted">
-                  "Nullam id dolor id nibh ultricies vehicula ut id elit. Cras
-                  justo odio, dapibus ac facilisis in, egestas eget quam. Donec
-                  id elit non mi porta gravida at eget metus.<br /><br />Nullam
-                  id dolor id nibh ultricies vehicula ut id elit. Cras justo
-                  odio, dapibus ac facilisis in, egestas eget quam. Donec id
-                  elit non mi porta gravida at eget metus.<br /><br /><br />Nullam
-                  id dolor id nibh ultricies vehicula ut id elit. Cras justo
-                  odio, dapibus ac facilisis in, egestas eget quam. Donec id
-                  elit non mi porta gravida at eget metus."
-                </p>
+                <h5>Période du 01/01/1234 au 02/02/2345</h5>
                 <h6>North School Penn High School</h6>
+                <p class="text-muted">
+                  "En participant au programme d'échange de l'association
+                  Hillcrest, j'ai eu l'opportunité de suivre une scolarité
+                  atypique: en effet, grâce au lycée américainn j'ai pu choisir
+                  de suivre des cours de Théatre, de Cuisine ou encore d'Art
+                  Plastique. En finissant les cours à 14h30, j'ai participé à de
+                  nombreuses activités au sein du lycée: nous pouvions notamment
+                  intégrer des clubs, faire du sport ou encore participer à la
+                  création de représentations théâtrales et de spectacles en
+                  intégrant le Stage Crew, le Cast ou le Costume Crew (j'ai
+                  personnellement adoré participé au Stage Crew). Certaines ...
+                </p>
+                <button id="openPopupButton" class="btn btn-primary">
+                  Lire l'intégralité du texte
+                </button>
+                <div id="popupOverlay">
+                  <div id="popupContent">
+                    "En participant au programme d'échange de l'association
+                    Hillcrest, j'ai eu l'opportunité de suivre une scolarité
+                    atypique: en effet, grâce au lycée américainn j'ai pu
+                    choisir de suivre des cours de Théatre, de Cuisine ou encore
+                    d'Art Plastique. En finissant les cours à 14h30, j'ai
+                    participé à de nombreuses activités au sein du lycée: nous
+                    pouvions notamment intégrer des clubs, faire du sport ou
+                    encore participer à la création de représentations
+                    théâtrales et de spectacles en intégrant le Stage Crew, le
+                    Cast ou le Costume Crew (j'ai personnellement adoré
+                    participé au Stage Crew). Certaines expériences inoubliables
+                    de cette année au lycée furent le bal de fin d'année (Prom),
+                    ainsi que la remise des diplômes (Graduation). A l'issue de
+                    mon année je suis devenue bilingue.<br />
+                    Les élèves ont été très accueillants et je me suis fait des
+                    amis sans aucune difficulté. Par ailleurs, s'immerger dans
+                    une famille d'accueil est aussi une expérience inédite et
+                    incroyable. J'ai beaucoup aimé apprendre à connaître la
+                    mienne et je les considère aujourd'hui comme ma deuxième
+                    famille.<br />
+                    D'autre part, en plus de m'immerger dans la culture
+                    américaine j'ai également découvert d'autres cultures via
+                    des clubs proposés au sein du lycée tels que les German,
+                    Japanese, Spanish clubs et je me suis fait de très bonne
+                    amies allemandes qui faisaient, elles aussi, parti du
+                    programme d'échange.<br />
+                    En outre, je souhaite à chacun d'avoir la chance de suivre
+                    une aussi belle et enrichissante expérience."<br />
+                    Sophie J.
+                  </div>
+                  <button id="closePopupButton">Fermer</button>
+                </div>
               </div>
             </div>
           </div>
@@ -144,7 +187,7 @@
           <div
             class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column"
           >
-            <h3 class="fs-6 fw-bold">About</h3>
+            <h3 class="fs-6 fw-bold">Contact</h3>
             <ul class="list-unstyled">
               <li>
                 <svg
@@ -187,7 +230,7 @@
                   <path
                     d="M4.146.146A.5.5 0 0 1 4.5 0h7a.5.5 0 0 1 .5.5c0 .68-.342 1.174-.646 1.479-.126.125-.25.224-.354.298v4.431l.078.048c.203.127.476.314.751.555C12.36 7.775 13 8.527 13 9.5a.5.5 0 0 1-.5.5h-4v4.5c0 .276-.224 1.5-.5 1.5s-.5-1.224-.5-1.5V10h-4a.5.5 0 0 1-.5-.5c0-.973.64-1.725 1.17-2.189A5.921 5.921 0 0 1 5 6.708V2.277a2.77 2.77 0 0 1-.354-.298C4.342 1.674 4 1.179 4 .5a.5.5 0 0 1 .146-.354z"
                   ></path></svg
-                ><a href="#" style="padding-left: 10px">12 Example Stress</a>
+                ><a href="#" style="padding-left: 10px">France, Toulouse</a>
               </li>
             </ul>
           </div>
@@ -241,6 +284,7 @@
         </div>
       </div>
     </footer>
+    <script src="../assets/js/script.js"></script>
     <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="../assets/js/bold-and-dark.js"></script>
   </body>

@@ -1,6 +1,6 @@
-document
-  .querySelector("#contact-form")
-  .addEventListener("submit", function (event) {
+const contact_form = document.querySelector("#contact-form");
+if (contact_form) {
+  contact_form.addEventListener("submit", function (event) {
     event.preventDefault();
 
     // Collecte des données du formulaire
@@ -28,3 +28,20 @@ document
         }
       );
   });
+}
+
+// Récupérez les références des éléments HTML
+const openPopupButton = document.getElementById("openPopupButton");
+const popupOverlay = document.getElementById("popupOverlay");
+
+// Lorsque le bouton est cliqué, affichez le popup
+openPopupButton.addEventListener("click", () => {
+  popupOverlay.style.display = "block";
+});
+
+// Lorsque le fond de superposition est cliqué, fermez le popup
+popupOverlay.addEventListener("click", (event) => {
+  if (event.target === popupOverlay) {
+    popupOverlay.style.display = "none";
+  }
+});
