@@ -55,3 +55,21 @@ footer[class*="dark-blue"] {
   overflow-y: auto; /* Permet de faire défiler le contenu si nécessaire */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+#myCarousel {
+  margin-top: -100px;
+  margin-bottom: 90px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 40%;
+}
+
+@media (max-width: 768px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    margin-top: 210px;
+    width: 40%;
+  }
+}
