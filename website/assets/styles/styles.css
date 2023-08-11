@@ -72,4 +72,8 @@ footer[class*="dark-blue"] {
     margin-top: 210px;
     width: 40%;
   }
+
+  .stade-img {
+    margin-top: 10px;
+  }
 }
