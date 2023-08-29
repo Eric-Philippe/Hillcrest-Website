@@ -30,6 +30,10 @@ footer[class*="dark-blue"] {
   background-color: #324358;
 }
 
+p[class*="text-gold"] {
+  color: rgb(245, 199, 100);
+}
+
 #popupOverlay {
   display: none;
   position: fixed;
