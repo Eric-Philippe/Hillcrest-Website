@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <Page>
       <header className="dark-blue">
-        <div className="container pt-4 pt-xl-5" id="header">
+        <div className="container pt-4" id="header">
           <div className="row pt-5">
             <div className="col-md-8 col-xl-6 text-center text-md-start mx-auto">
               <div className="text-center">
