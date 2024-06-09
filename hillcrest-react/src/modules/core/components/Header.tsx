@@ -1,6 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import LanguageSelector from "../design/LanguageSelector";
+import { Link } from "react-router-dom";
 
 const Header: React.FC = () => {
   const { t } = useTranslation();
@@ -13,7 +14,7 @@ const Header: React.FC = () => {
       id="mainNav"
     >
       <div className="container">
-        <a className="navbar-brand d-flex align-items-center" href="/">
+        <Link className="navbar-brand d-flex align-items-center" to="/">
           <span className="bs-icon-sm bs-icon-circle bs-icon-primary shadow d-flex justify-content-center align-items-center me-2 bs-icon">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -36,7 +37,7 @@ const Header: React.FC = () => {
               alt="main-logo"
             />
           </span>
-        </a>
+        </Link>
         <button
           data-bs-toggle="collapse"
           className="navbar-toggler"
@@ -48,12 +49,12 @@ const Header: React.FC = () => {
         <div className="collapse navbar-collapse" id="navcol-1">
           <ul className="navbar-nav mx-auto">
             <li className="nav-item">
-              <a
+              <Link
                 className={`nav-link ${currentPath === "/" ? "active" : ""}`}
-                href="/"
+                to="/"
               >
                 {t("menu.home")}
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
               <div
@@ -71,56 +72,51 @@ const Header: React.FC = () => {
                   {t("menu.programs")}
                 </a>
                 <div className="dropdown-menu" style={{ fontWeight: "bold" }}>
-                  <a
+                  <Link
                     className="dropdown-item"
-                    href="/one_year_american"
+                    to="/one_year_american"
                     style={{ color: "black" }}
                   >
                     {t("menu.programs_list.one_year")}
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     className="dropdown-item"
-                    href="/one_year_stage"
+                    to="/one_year_stage"
                     style={{ color: "black" }}
                   >
                     {t("menu.programs_list.prepa_eng")}
-                  </a>
+                  </Link>
                 </div>
               </div>
             </li>
             <li className="nav-item">
-              <a
+              <Link
                 className={`nav-link ${
                   currentPath === "/testimony" ? "active" : ""
                 }`}
-                href="/testimony"
+                to="/testimony"
               >
                 {t("menu.testiomonials")}
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a
+              <Link
                 className={`nav-link ${
                   currentPath === "/about" ? "active" : ""
                 }`}
-                href="/about"
+                to="/about"
               >
                 {t("menu.about")}
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
               <LanguageSelector />
             </li>
           </ul>
 
-          <a
-            className="btn btn-primary shadow"
-            role="button"
-            href="contact"
-            data-bs-target="fr/contacts.html"
-          >
+          <Link className="btn btn-primary shadow" role="button" to="/contact">
             {t("menu.contact")}
-          </a>
+          </Link>
         </div>
       </div>
     </nav>

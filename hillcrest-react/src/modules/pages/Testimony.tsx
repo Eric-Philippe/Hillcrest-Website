@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Page from "../core/design/Page";
+import { Link } from "react-router-dom";
 
 const Testimony = () => {
   const [popupVisible, setPopupVisible] = useState(false);
@@ -27,14 +28,14 @@ const Testimony = () => {
           >
             <div className="col mb-4">
               <div>
-                <a href="/testimony">
+                <Link to="/testimony">
                   <img
                     className="rounded img-fluid shadow w-100 fit-cover"
                     src="../assets/img/sophie4.jpg"
                     style={{ height: "482px" }}
                     alt=""
                   />
-                </a>
+                </Link>
                 <div className="py-4"></div>
               </div>
             </div>
