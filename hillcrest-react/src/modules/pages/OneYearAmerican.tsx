@@ -4,6 +4,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useTranslation } from "react-i18next";
 
+import "./styles/OneYearAmerican.css";
+
 const OneYearAmerican = () => {
   const { t } = useTranslation();
 

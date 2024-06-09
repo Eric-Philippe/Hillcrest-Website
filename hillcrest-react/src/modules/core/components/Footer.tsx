@@ -1,4 +1,3 @@
-import React from "react";
 import { MAIL } from "../../../config/env";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
@@ -55,7 +54,7 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link to="/one_year_stage">
+                  <Link to="/one_week_stage">
                     {t("menu.programs_list.prepa_eng")}
                   </Link>
                 </li>

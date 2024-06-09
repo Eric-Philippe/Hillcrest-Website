@@ -1,0 +1,48 @@
+.hillcrest-schedule {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.schedule-day {
+  flex: 1 1 calc(33.33% - 20px);
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.schedule-day h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #232f3f;
+}
+
+.schedule-day h4 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #829fca;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+  color: #232f3f;
+}
+
+.schedule-item {
+  transition: background-color 0.3s ease;
+  border-radius: 10px;
+}
+
+.schedule-item:hover {
+  background-color: #b8e7e4;
+  border-radius: 20px;
+}

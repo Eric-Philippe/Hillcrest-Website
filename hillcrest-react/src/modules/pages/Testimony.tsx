@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Page from "../core/design/Page";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import "./styles/Testimony.css";
 
 const Testimony = () => {
   const [popupVisible, setPopupVisible] = useState(false);

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useLocalStorage } from "../hooks/useLocalStorage";
 import { useTranslation } from "react-i18next";
+import "./styles/LanguageToggle.css";
 
 interface LanguageToggleProps {
   checked?: boolean;

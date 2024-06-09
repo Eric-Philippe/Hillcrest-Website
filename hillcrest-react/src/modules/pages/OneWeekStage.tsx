@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick-theme.css";
 import HillcrestSchedule from "../core/design/HillcrestSchedule";
 import { useTranslation } from "react-i18next";
 
-const OneYearStage = () => {
+const OneWeekStage = () => {
   const { t } = useTranslation();
 
   return (
@@ -20,7 +20,10 @@ const OneYearStage = () => {
                 src="../assets/img/flyer.png"
                 alt="One Year Stage"
                 className="img-fluid mt-5"
-                style={{ width: "50%", height: "auto" }}
+                style={{
+                  width: window.innerWidth < 768 ? "100% " : "60%",
+                  height: "auto",
+                }}
               />
             </div>
           </div>
@@ -42,4 +45,4 @@ const OneYearStage = () => {
   );
 };
 
-export default OneYearStage;
+export default OneWeekStage;

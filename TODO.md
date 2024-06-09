@@ -33,8 +33,8 @@
 - [x] Remove phone number from the website
 - [x] Auto-update the CopyRight year
 - [x] Add a favicon
-- [ ] Fix the mobile header margin-Y
-- [ ] Clean the language selector in order to make it close to the header
+- [x] Fix the mobile header margin-Y
+- [x] Clean the language selector in order to make it close to the header
 
 ## Other
 
