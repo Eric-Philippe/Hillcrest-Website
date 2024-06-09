@@ -15,6 +15,12 @@
     },
     "contact": "Contact Us"
   },
+  "pages": {
+    "programs": "Programs",
+    "testiomonials": "Testimonials",
+    "about": "About",
+    "contact": "Contact"
+  },
   "home": {
     "title": "Educational Programs",
     "subtitle": "Offering young people the opportunity to open up to the world, grow, learn and flourish within cultural and linguistic diversity."

@@ -129,3 +129,7 @@ table td {
   background-color: #b8e7e4;
   border-radius: 20px;
 }
+
+.dropdown-hover:hover .dropdown-menu {
+  display: block;
+}

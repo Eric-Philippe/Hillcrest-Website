@@ -4,9 +4,14 @@ import Footer from "../components/Footer";
 
 interface PageProps {
   children: ReactNode;
+  title?: string;
 }
 
-const Page: React.FC<PageProps> = ({ children }) => {
+const Page: React.FC<PageProps> = ({ children, title }) => {
+  let pageTitle = "Hillcrest";
+  if (title) pageTitle += ` | ${title}`;
+  document.title = pageTitle;
+
   return (
     <div>
       <Header />

@@ -5,7 +5,7 @@ const About = () => {
   const { t } = useTranslation();
 
   return (
-    <Page>
+    <Page title={t("pages.about")}>
       <section className="py-5">
         <div className="container py-5">
           <div className="row mb-4 mb-lg-5">

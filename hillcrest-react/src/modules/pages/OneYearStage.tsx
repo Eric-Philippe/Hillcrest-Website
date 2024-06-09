@@ -2,10 +2,13 @@ import Page from "../core/design/Page";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import HillcrestSchedule from "../core/design/HillcrestSchedule";
+import { useTranslation } from "react-i18next";
 
 const OneYearStage = () => {
+  const { t } = useTranslation();
+
   return (
-    <Page>
+    <Page title={t("pages.programs")}>
       <section>
         <div className="container py-5">
           <div className="row mb-5">

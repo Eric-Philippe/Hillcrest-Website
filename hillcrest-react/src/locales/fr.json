@@ -15,6 +15,12 @@
     },
     "contact": "Nous contacter"
   },
+  "pages": {
+    "programs": "Programmes",
+    "testiomonials": "Témoignages",
+    "about": "À propos",
+    "contact": "Contact"
+  },
   "home": {
     "title": "Programmes Éducatifs",
     "subtitle": "Offrir aux jeunes l'opportunité de les ouvrir au monde, grandir, apprendre et s'épanouir au sein d'une diversité culturelle et linguistique."

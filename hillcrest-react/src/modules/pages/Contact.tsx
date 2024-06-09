@@ -6,7 +6,7 @@ const Contact = () => {
   const { t } = useTranslation();
 
   return (
-    <Page>
+    <Page title={t("pages.contact")}>
       <section className="py-5 dark-blue">
         <div className="container py-5">
           <div className="row mb-5">

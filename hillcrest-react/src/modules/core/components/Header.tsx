@@ -56,7 +56,7 @@ const Header: React.FC = () => {
                 {t("menu.home")}
               </Link>
             </li>
-            <li className="nav-item">
+            <li className="nav-item dropdown-hover">
               <div
                 className="nav-item dropdown"
                 style={{ padding: "8px 0px", height: 41 }}
@@ -68,6 +68,7 @@ const Header: React.FC = () => {
                   }`}
                   aria-expanded="false"
                   data-bs-toggle="dropdown"
+                  style={{ cursor: "pointer" }}
                 >
                   {t("menu.programs")}
                 </a>

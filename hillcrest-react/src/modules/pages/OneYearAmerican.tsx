@@ -2,8 +2,11 @@ import Page from "../core/design/Page";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { useTranslation } from "react-i18next";
 
 const OneYearAmerican = () => {
+  const { t } = useTranslation();
+
   // Array containing paths to your images
   const images = [
     "../assets/img/north_penn.jpg",
@@ -27,7 +30,7 @@ const OneYearAmerican = () => {
   };
 
   return (
-    <Page>
+    <Page title={t("pages.programs")}>
       <section>
         <div className="container py-5">
           <div className="row mb-5">
