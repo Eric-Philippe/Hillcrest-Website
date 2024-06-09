@@ -1,7 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import LanguageSelector from "../design/LanguageSelector";
 import { Link } from "react-router-dom";
+import LanguageToggle from "../design/LanguageToggle";
 
 const Header: React.FC = () => {
   const { t } = useTranslation();
@@ -110,8 +110,8 @@ const Header: React.FC = () => {
                 {t("menu.about")}
               </Link>
             </li>
-            <li className="nav-item">
-              <LanguageSelector />
+            <li className="nav-item language-toggle">
+              <LanguageToggle />
             </li>
           </ul>
 

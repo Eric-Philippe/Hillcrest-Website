@@ -25,6 +25,7 @@
 - - [x] Add the Schedule
 - - [ ] Create the Google Form
 - - [ ] Put the Google Form in the website, in an iframe
+- [ ] Add Legal Mentions
 
 ## Fixes
 
