@@ -1,0 +1,40 @@
+{
+  "menu": {
+    "home": "Home",
+    "programs": "Our Programs",
+    "programs_list": {
+      "one_year": "A school year in an American high school",
+      "prepa_eng": "Stage Prepa. in English"
+    },
+    "testiomonials": "Testimonials",
+    "about": "About Us",
+    "change_lang": "Passer en français",
+    "languages": {
+      "en": "English",
+      "fr": "Français"
+    },
+    "contact": "Contact Us"
+  },
+  "home": {
+    "title": "Educational Programs",
+    "subtitle": "Offering young people the opportunity to open up to the world, grow, learn and flourish within cultural and linguistic diversity."
+  },
+  "about": {
+    "1901": "Founded with passion and dedication, Hillcrest is a 1901 association that fully embodies the founding principles of this legal structure. Registered as a non-profit association, Hillcrest is committed to serving and supporting its community with ethics and transparency",
+    "mission_title": "Objectives and values",
+    "mission_text": "Hillcrest's mission is to develop educational programs for curious, open-minded teenagers who want to have a cultural and linguistic experience. We pride ourselves on developing quality partnerships in different countries.",
+    "list_title": "The values ​​that our programs carry are: ",
+    "values": {
+      "sharing": "Sharing",
+      "tolerance": "Tolerance",
+      "respect": "Respect"
+    }
+  },
+  "contact": {
+    "subtitle": "Nous contacter",
+    "title": "Contact us",
+    "name": "Name",
+    "address": "Address",
+    "send": "Send"
+  }
+}

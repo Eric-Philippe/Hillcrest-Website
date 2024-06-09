@@ -1,0 +1,40 @@
+{
+  "menu": {
+    "home": "Accueil",
+    "programs": "Nos programmes",
+    "programs_list": {
+      "one_year": "Une année scolaire dans un lycée américain",
+      "prepa_eng": "Stage Prepa. en Anglais"
+    },
+    "testiomonials": "Témoignages",
+    "about": "À propos de nous",
+    "change_lang": "Switch to english",
+    "languages": {
+      "fr": "Français",
+      "en": "Anglais"
+    },
+    "contact": "Nous contacter"
+  },
+  "home": {
+    "title": "Programmes Éducatifs",
+    "subtitle": "Offrir aux jeunes l'opportunité de les ouvrir au monde, grandir, apprendre et s'épanouir au sein d'une diversité culturelle et linguistique."
+  },
+  "about": {
+    "1901": "Fondée avec passion et dévouement, Hillcrest est une association 1901 qui incarne pleinement les principes fondateurs de cette structure juridique. Enregistrée en tant qu'association à but non lucratif, Hillcrest s'est engagée à servir et à soutenir sa communauté avec éthique et transparence",
+    "mission_title": "Objectifs et valeurs",
+    "mission_text": "Hillcrest se donne pour mission de développer des programmes éducatifs pour les adolescents curieux, ouverts et qui souhaitent vivre une expérience culturelle et linguistique. Nous portons un point d'honneur à développer des partenariats de qualité dans différents pays.\n Les valeurs que portent nos programmes sont :",
+    "list_title": "Objectifs et valeurs: ",
+    "values": {
+      "sharing": "Le partage",
+      "tolerance": "La tolérance",
+      "respect": "Le respect"
+    }
+  },
+  "contact": {
+    "subtitle": "Contact us",
+    "title": "Nous contacter",
+    "name": "Nom",
+    "address": "Adresse",
+    "send": "Envoyer"
+  }
+}
