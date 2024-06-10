@@ -41,6 +41,47 @@ const OneWeekStage = () => {
           </div>
         </div>
       </section>
+      <section>
+        <div className="container py-5">
+          <div className="row">
+            <div className="col-xl-8 text-center mx-auto">
+              <h2 className="fw-bold">Inscription à la préparation</h2>
+              <p className="fw-bold">
+                Pour vous inscrire à la préparation, veuillez remplir le
+                formulaire ci-dessous. Nous vous contacterons dans les plus
+                brefs délais. Vous pouvez également directement vous rendre sur
+                le formulaire en cliquant{" "}
+                <a
+                  href="https://forms.gle/4KvaJSV4eD2j9m6e7"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  ici
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLScuPgmATKHwk6pyuli18KPzjw7IWgxgL2gzXohU8Z4jb8KcxA/viewform?embedded=true"
+            width={window.innerWidth < 768 ? "100%" : "640"}
+            height="1000"
+            frameBorder="0"
+            marginHeight={0}
+            marginWidth={0}
+            title="Google Form"
+          >
+            Loading…
+          </iframe>
+        </div>
+      </section>
     </Page>
   );
 };
