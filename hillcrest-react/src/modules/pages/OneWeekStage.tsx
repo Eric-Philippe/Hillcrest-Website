@@ -16,6 +16,10 @@ const OneWeekStage = () => {
               <h2 className="fw-bold">
                 Préparation aux concours d'entrée des grandes écoles
               </h2>
+              <br />
+              <h3 className="fw-bold">
+                Préparation intensive aux épreuves d'anglais
+              </h3>
               <img
                 src="../assets/img/flyer.png"
                 alt="One Year Stage"
