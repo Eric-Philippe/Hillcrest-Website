@@ -47,7 +47,7 @@ const Testimony = () => {
               <div>
                 <div className="py-4">
                   <h4 className="fw-bold">Sophie&nbsp;</h4>
-                  <h5>Période du 01/01/1234 au 02/02/2345</h5>
+                  <h5>Période du 01/09/2018 au 31/06/2019</h5>
                   <h6>North School Penn High School</h6>
                   <p className="text-muted">
                     "En participant au programme d'échange de l'association
