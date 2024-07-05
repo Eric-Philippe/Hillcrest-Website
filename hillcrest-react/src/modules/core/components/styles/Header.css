@@ -11,12 +11,22 @@
   text-align: left;
 }
 
+.custom-toggle:focus,
+.custom-toggle:active {
+  border-color: white !important;
+  box-shadow: none !important;
+}
+
 @media (max-width: 767.98px) {
   .navbar-nav {
     margin: 0;
     margin-top: 1rem;
     padding: 0;
     width: 100%;
+  }
+
+  .navbar-toggler-icon {
+    filter: invert(1);
   }
 
   .navbar-nav .nav-item {
