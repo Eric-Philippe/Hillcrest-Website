@@ -1,9 +1,35 @@
+import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { MAIL } from "../../config/env";
 import Page from "../core/design/Page";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
   const { t } = useTranslation();
+  const [message, setMessage] = useState("");
+  const [error, setError] = useState("");
+
+  const sendEmail = (e: { preventDefault: () => void; target: any }) => {
+    e.preventDefault();
+    const form = e.target;
+
+    emailjs
+      .sendForm(
+        "service_cemli3i",
+        "template_clt36qe",
+        form,
+        "eoPJ5KwYUNr5YwcQL"
+      )
+      .then(
+        (result) => {
+          setMessage(t("contact.success"));
+          form.reset();
+        },
+        (error) => {
+          setError(t("contact.error"));
+        }
+      );
+  };
 
   return (
     <Page title={t("pages.contact")}>
@@ -20,7 +46,11 @@ const Contact = () => {
           <div className="row d-flex justify-content-center">
             <div className="col-md-6 col-xl-4">
               <div>
-                <form className="p-3 p-xl-4" id="contact-form">
+                <form
+                  className="p-3 p-xl-4"
+                  id="contact-form"
+                  onSubmit={sendEmail}
+                >
                   <div className="mb-3">
                     <input
                       className="form-control"
@@ -60,6 +90,8 @@ const Contact = () => {
                     </button>
                   </div>
                 </form>
+                {message && <p className="text-success mt-3">{message}</p>}
+                {error && <p className="text-danger mt-3">{error}</p>}
               </div>
             </div>
             <div className="col-md-4 col-xl-4 d-flex justify-content-center justify-content-xl-start">
@@ -75,7 +107,7 @@ const Contact = () => {
                       className="bi bi-envelope"
                     >
                       <path
-                        fill-rule="evenodd"
+                        fillRule="evenodd"
                         d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"
                       ></path>
                     </svg>

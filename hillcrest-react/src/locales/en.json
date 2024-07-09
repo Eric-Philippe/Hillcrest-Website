@@ -41,6 +41,8 @@
     "title": "Contact us",
     "name": "Name",
     "address": "Address",
-    "send": "Send"
+    "send": "Send",
+    "success": "Your message has been sent successfully",
+    "error": "An error occurred, please try again later"
   }
 }
