@@ -3,9 +3,30 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import HillcrestSchedule from "../core/design/HillcrestSchedule";
 import { useTranslation } from "react-i18next";
+import SliderComponent from "../core/components/Slider";
 
 const OneWeekStage = () => {
   const { t } = useTranslation();
+
+  const images = [
+    "../assets/img/workroom/breakroom.jpg",
+    "../assets/img/workroom/hall1.jpg",
+    "../assets/img/workroom/hall2.jpg",
+    "../assets/img/workroom/room1.jpg",
+    "../assets/img/workroom/room2.jpg",
+    "../assets/img/workroom/room3.jpg",
+  ];
+
+  // React Slick settings
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+  };
 
   return (
     <Page title={t("pages.programs")}>
@@ -53,8 +74,8 @@ const OneWeekStage = () => {
               <p className="fw-bold">
                 Pour vous inscrire à la préparation, veuillez remplir le
                 formulaire ci-dessous. Nous vous contacterons dans les plus
-                brefs délais. Vous pouvez également directement vous rendre sur
-                le formulaire en cliquant{" "}
+                brefs délais. Vous pouvez également vous rendre sur le
+                formulaire en cliquant{" "}
                 <a
                   href="https://forms.gle/4KvaJSV4eD2j9m6e7"
                   target="_blank"
@@ -66,6 +87,9 @@ const OneWeekStage = () => {
             </div>
           </div>
         </div>
+        <section className="col-xl-4 text-center mx-auto mb-5">
+          <SliderComponent settings={settings} images={images} />
+        </section>
         <div
           style={{
             display: "flex",

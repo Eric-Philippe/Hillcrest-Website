@@ -1,10 +1,10 @@
 import Page from "../core/design/Page";
-import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useTranslation } from "react-i18next";
 
 import "./styles/OneYearAmerican.css";
+import SliderComponent from "../core/components/Slider";
 
 const OneYearAmerican = () => {
   const { t } = useTranslation();
@@ -78,17 +78,7 @@ const OneYearAmerican = () => {
         </div>
       </section>
       <section className="col-md-8 col-xl-6 text-center mx-auto mb-5">
-        <Slider {...settings} className="carousel-container">
-          {images.map((image, index) => (
-            <div key={index} className="carousel-image-container">
-              <img
-                src={image}
-                alt={`Slide ${index}`}
-                className="carousel-image"
-              />
-            </div>
-          ))}
-        </Slider>
+        <SliderComponent settings={settings} images={images} />
       </section>
     </Page>
   );
